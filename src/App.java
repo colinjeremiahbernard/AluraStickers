@@ -27,6 +27,6 @@ public class App {
             System.out.println(filme.get("image"));
             System.out.println(filme.get("imdbRating"));
     }
-    
     }
 }
+
