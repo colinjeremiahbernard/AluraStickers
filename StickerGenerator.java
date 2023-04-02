@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
-
 import javax.imageio.ImageIO;
 
 public class StickerGenerator {
@@ -31,10 +30,8 @@ public class StickerGenerator {
     //escrever a nova imagem em um arquivo.
     ImageIO.write((RenderedImage) novaImagem,
      "png",new File(nomeArquivo));
-    
-  }
-
+    }
   public List<conteudo> extraiConteudo(String json) {
-    return null;
+    return extraiConteudo(json);
   }
 }

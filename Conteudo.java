@@ -1,4 +1,5 @@
 public class Conteudo {
+  public static final String ListaDeConteudos = null;
   private final String titulo ;
   private final String urlImagem;
 

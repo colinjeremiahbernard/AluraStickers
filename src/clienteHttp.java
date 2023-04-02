@@ -11,12 +11,10 @@ public class clienteHttp {
       URI endereco = URI.create(Url);
       var client = HttpClient.newHttpClient();
       var request = HttpRequest.newBuilder(endereco).GET().build();
-      HttpResponse<String> response = client.send(
-        request.BodyHandler.asString()
-      );
+      HttpResponse<String> response = client.send(request,HttpResponse.BodyHandlers.ofString());
       String body = response.body();
       return body;
-    } catch (IOException | InterruptedException ex) {
+    } catch (IOException |InterruptedException ex) {
       throw new RuntimeException(ex);
     }
   }
